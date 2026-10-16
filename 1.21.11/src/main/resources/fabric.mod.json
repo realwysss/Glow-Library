@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "glowlib",
+	"version": "${version}",
+	"name": "Glow Library",
+	"description": "one menu for every wysss glow mod: sync the rainbow effect, apply the same settings to all of them or jump into each one (key L).",
+	"authors": ["wysss"],
+	"contact": {"sources": "https://github.com/realwysss/Glow-Library"},
+	"license": "All-Rights-Reserved",
+	"icon": "assets/glowlib/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["dev.glib.Gl"],
+		"modmenu": ["dev.glib.ModmenuIntgr"]
+	},
+	"suggests": {
+		"modmenu": "*"
+	},
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"fabric-api": "*",
+		"wysslib": ">=1.0.0",
+		"minecraft": ">=1.21.11 <1.22",
+		"java": ">=21"
+	}
+}
